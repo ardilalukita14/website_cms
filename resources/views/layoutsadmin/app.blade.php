@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+        @include('sweetalert::alert')
         @include('layoutsadmin.footer')
 
   <script src="../dist/modules/jquery.min.js"></script>

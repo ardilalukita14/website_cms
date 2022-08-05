@@ -89,7 +89,7 @@
             <i class="ion ion-android-person d-lg-none"></i>
             <div class="d-sm-none d-lg-inline-block" style= "font-size: 18px; font-family: Arial, Helvetica>Profile">Hi, {{ Auth::user()->name }}</div></a>
             <div class="dropdown-menu dropdown-menu-right">
-              <a href="/profile" class="dropdown-item has-icon">
+              <a href="{{ route('profile.edit') }}" class="dropdown-item has-icon">
                 <i class="ion ion-android-person"></i> Profile
               </a>
               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">

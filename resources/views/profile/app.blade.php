@@ -68,5 +68,7 @@
   <script src="../dist/js/scripts.js"></script>
   <script src="../dist/js/custom.js"></script>
   <script src="../dist/js/demo.js"></script>
+
+  @include('sweetalert::alert')
 </body>
 </html>
