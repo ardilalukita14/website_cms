@@ -8,15 +8,15 @@ use Alert;
 class ProfileController extends Controller
 {
     public function edit() {
-        Alert::success('Success Toast','success'); 
+        Alert::success('Profile Berhasi di Update','Sukses'); 
         return view('profile.edit')->with('user', auth()->user());
     }
 
     public function update(Request $request) {
-        Alert::success('Success Toast','success'); 
+        Alert::success('Profile Berhasi di Update','Sukses'); 
         $request->user()->update([
             'password' => Hash::make($request->get('password'))
         ]);
-        return redirect()->route('profile.edit');
+        return redirect()->route('indexadmin');
     }
 }

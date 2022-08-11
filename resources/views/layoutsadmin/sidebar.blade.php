@@ -22,17 +22,15 @@
                 <li><a href="flag.html"><i class="ion ion-ios-circle-outline"></i> Flag</a></li>
               </ul>
             </li> -->
-            <li>
-              <a href="/table"><i class="ion ion-clipboard"></i><span>Tables</span></a>
-            </li>
+            
             <li>
               <a href="/chart"><i class="ion ion-stats-bars"></i><span>Chart.js</span></a>
             </li>
             <li>
-              <a href="/simple"><i class="ion ion-ios-location-outline"></i><span>Google Maps</span></a>
+              <a href="/admin/berita"><i class="ion ion-ios-paper-outline"></i><span>Berita</span></a>
             </li>
             <li>
-              <a href="#" class="has-dropdown"><i class="ion ion-ios-copy-outline"></i><span>Examples</span></a>
+              <a href="/kategori"><i class="ion ion-ios-list-outline"></i><span>Kategori Berita</span></a>
               <ul class="menu-dropdown">
                 <li><a href="login.html"><i class="ion ion-ios-circle-outline"></i> Login</a></li>
                 <li><a href="register.html"><i class="ion ion-ios-circle-outline"></i> Register</a></li>
@@ -40,31 +38,9 @@
                 <li><a href="reset.html"><i class="ion ion-ios-circle-outline"></i> Reset Password</a></li>
                 <li><a href="404.html"><i class="ion ion-ios-circle-outline"></i> 404</a></li>
               </ul>
-            </li>
-
-            <li class="menu-header">More</li>
+            
             <li>
-              <a href="#" class="has-dropdown"><i class="ion ion-ios-nutrition"></i> Click Me</a>
-              <ul class="menu-dropdown">
-                <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Menu 1</a></li>
-                <li><a href="#" class="has-dropdown"><i class="ion ion-ios-circle-outline"></i> Menu 2</a>
-                  <ul class="menu-dropdown">
-                    <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 1</a></li>
-                    <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 2</a></li>
-                    <li><a href="#" class="has-dropdown"><i class="ion ion-ios-circle-outline"></i> Child Menu 3</a>
-                      <ul class="menu-dropdown">
-                        <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 1</a></li>
-                        <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 2</a></li>
-                        <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 3</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><i class="ion ion-ios-circle-outline"></i> Child Menu 4</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><i class="ion ion-heart"></i> Badges <div class="badge badge-primary">10</div></a>
+              <a href="/komentar"><i class="ion ion-ios-chatbubble-outline"></i><span>Komentar</span></a>
             </li>
             <li>
               <a href="/saran"><i class="ion ion-ios-email-outline"></i> Saran</a>

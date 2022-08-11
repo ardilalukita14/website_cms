@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -11,10 +12,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Show the application dashboard.
@@ -28,4 +29,25 @@ class HomeController extends Controller
         // $jumlah2 = DB::table('barang')->count();
         return view('indexadmin', compact('jumlah_user', 'jumlah_saran'));
     }
+
+    public function indexHome()
+    {
+        return view('home');
+    }
+    //     $role=Auth::user()->role;
+
+    //     if($role=='administrator')
+    //     {
+    //         return view('indexadmin');
+    //     }
+
+    //     if($role=='penulis')
+    //     {
+    //         return view('penulis.berita');
+    //     }
+
+    //     else{
+    //         return view('editor.berita');
+    //     }
+    // }
 }

@@ -13,6 +13,7 @@
             <b>SARAN DAN KRITIK</b>
             </div>
             @section('content')
+            <br></br>
             <div class="float-left my-4 mx-5">
                 <form action="{{route('saran.index')}}" class="row g-3" method="GET">
                     <div class="input-group custom-search-form">

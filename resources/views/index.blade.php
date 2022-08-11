@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="banner-cap">
                                     <p>Trending</p>
-                                   <h3><a href="post_details.html">The pomelo case: scope of plant variety rights in China</a></h3>
+                                   <h3><a href="/post_details">The pomelo case: scope of plant variety rights in China</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                                             <img src="assets/img/gallery/latest-post.png" alt="">
                                             <div class="trend-top-cap">
                                                 <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Design</span>
-                                                <h2><a href="post_details.html" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Calling time on irresponsible junk food advertising to children</a></h2>
+                                                <h2><a href="/post_details" data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Calling time on irresponsible junk food advertising to children</a></h2>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@
                                             <img src="assets/img/gallery/latest-post.png" alt="">
                                             <div class="trend-top-cap">
                                                 <span class="bgr" data-animation="fadeInUp" data-delay=".2s" data-duration="1000ms">Design</span>
-                                                <h2><a href="post_details.html"  data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Calling time on irresponsible junk food advertising to children</a></h2>
+                                                <h2><a href="/post_details"  data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms">Calling time on irresponsible junk food advertising to children</a></h2>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@
                                     <div class="banner-img-cap2">
                                         <div class="banner-cap2 banner-cap3">
                                             <p>Trending</p>
-                                           <h3><a href="post_details.html">The pomelo case: scope of plant variety rights in China</a></h3>
+                                           <h3><a href="/post_details">The pomelo case: scope of plant variety rights in China</a></h3>
                                             <p class="normal">Passion for their subjects from the subtleties of regional Thai home cooking to the intersection of food and queer culture.</p>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                     <div class="banner-img-cap2">
                                         <div class="banner-cap2 banner-cap3">
                                             <p>Technology</p>
-                                            <h3><a href="post_details.html">Valuable lessons to take away from COVID-19</a></h3>
+                                            <h3><a href="/post_details">Valuable lessons to take away from COVID-19</a></h3>
                                             <p  class="normal">Passion for their subjects from the subtleties of regional Thai home cooking to the intersection of food and queer culture.</p>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                                 </div>
                                 <div class="banner-cap2">
                                     <p>Technology</p>
-                                    <h3><a href="post_details.html">Calling time on irresponsible junk food advertising to children</a></h3>
+                                    <h3><a href="/post_details">Calling time on irresponsible junk food advertising to children</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +197,7 @@
                                 </div>
                                 <div class="banner-cap2">
                                     <p>Design</p>
-                                    <h3><a href="post_details.html">Researchers control cattle microbiome  to reduce greenhouse gases</a></h3>
+                                    <h3><a href="/post_details">Researchers control cattle microbiome  to reduce greenhouse gases</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
                                             </div>
                                         </div>
                                         <div class="banner-cap4">
-                                            <h3><a href="post_details.html">Editors with strong points  of view</a></h3>
+                                            <h3><a href="/post_details">Editors with strong points  of view</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -250,7 +250,7 @@
                                             </div>
                                         </div>
                                         <div class="banner-cap4">
-                                            <h3><a href="post_details.html">Dill is part of an unexpected groundswell</a></h3>
+                                            <h3><a href="/post_details">Dill is part of an unexpected groundswell</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -332,7 +332,7 @@
                                 </div>
                                 <div class="job-tittle">
                                     <span>Trending</span>
-                                    <a href="post_details.html"><h4>The pomelo case: scope of plant variety rights in China</h4></a>
+                                    <a href="/post_details"><h4>The pomelo case: scope of plant variety rights in China</h4></a>
                                     <p>We present things in a way that isn’t sensational, said Ms. Cham mavanijakul, 20, whose family has roots...</p>
                                 </div>
                             </div>
@@ -345,7 +345,7 @@
                                 </div>
                                 <div class="job-tittle">
                                     <span>Trending</span>
-                                    <a href="post_details.html"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
+                                    <a href="/post_details"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
                                     <p>We present things in a way that isn’t sensational, said Ms. Cham mavanijakul, 20, whose family has roots...</p>
                                 </div>
                             </div>
@@ -358,7 +358,7 @@
                                 </div>
                                 <div class="job-tittle">
                                     <span>Trending</span>
-                                    <a href="post_details.html"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
+                                    <a href="/post_details"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
                                     <p>We present things in a way that isn’t sensational, said Ms. Cham mavanijakul, 20, whose family has roots...</p>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@
                                 </div>
                                 <div class="job-tittle">
                                     <span>Trending</span>
-                                    <a href="post_details.html"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
+                                    <a href="/post_details"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
                                     <p>We present things in a way that isn’t sensational, said Ms. Cham mavanijakul, 20, whose family has roots...</p>
                                 </div>
                             </div>
@@ -384,7 +384,7 @@
                                 </div>
                                 <div class="job-tittle">
                                     <span>Trending</span>
-                                    <a href="post_details.html"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
+                                    <a href="/post_details"><h4>The pomelo case:scope of plant variety rights in China</h4></a>
                                     <p>We present things in a way that isn’t sensational, said Ms. Cham mavanijakul, 20, whose family has roots...</p>
                                 </div>
                             </div>
@@ -418,7 +418,7 @@
                                 </div>
                                 <div class="banner-cap2">
                                     <p>Technology</p>
-                                   <h3><a href="post_details.html">The pomelo case: scope of plant rights in China</a></h3>
+                                   <h3><a href="/post_details">The pomelo case: scope of plant rights in China</a></h3>
                                     <p class="blog-text" style="text-transform: normal !important;">Indie folks start out by making something they want to read, that tell stories they want told..</p>
                                 </div>
                             </div>
@@ -432,7 +432,7 @@
                                 </div>
                                 <div class="banner-cap2">
                                     <p>Technology</p>
-                                   <h3><a href="post_details.html">The pomelo case: scope of plant rights in China</a></h3>
+                                   <h3><a href="/post_details">The pomelo case: scope of plant rights in China</a></h3>
                                     <p class="blog-text" style="text-transform: normal !important;">Indie folks start out by making something they want to read, that tell stories they want told..</p>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                                 </div>
                                 <div class="banner-cap2">
                                     <p>Technology</p>
-                                   <h3><a href="post_details.html">The pomelo case: scope of plant rights in China</a></h3>
+                                   <h3><a href="/post_details">The pomelo case: scope of plant rights in China</a></h3>
                                     <p class="blog-text" style="text-transform: normal !;">Indie folks start out by making something they want to read, that tell stories they want told..</p>
                                 </div>
                             </div>

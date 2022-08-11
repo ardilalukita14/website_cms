@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\saran;
 use Illuminate\Http\Request;
+use Alert;
 
 class SaranController extends Controller
 {
@@ -94,6 +95,7 @@ class SaranController extends Controller
      */
     public function destroy($id)
     {
+        Alert::success('Saran Berhasi Dihapus','Sukses'); 
         Saran::find($id)->delete();
         return redirect()->route('saran.index')
             ->with('success', 'Data Berhasil Dihapus');

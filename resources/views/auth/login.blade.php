@@ -68,16 +68,16 @@
                                     <label for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
-                                    @if (Route::has('password.request'))
+                                    <!-- @if (Route::has('password.request'))
                                     <a class="f-right" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
-                                    @endif
+                                    @endif -->
                                     </div>
                                 </div>
                                 <!-- /.col -->
                                 <div class="login-footer">
-                                    <p>Don’t have an account? <a href="/register">Sign Up</a>  here</p>
+                                    <p>Silahkan <a href="/login">Login</a> untuk mengakses halaman Admin</p>
                                     <button class="submit-btn3"><a>{{ __('Login') }}</a> &nbsp;</button>
                                 </div>
                                 <!-- /.col -->

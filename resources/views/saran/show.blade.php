@@ -12,9 +12,10 @@
             </div>
 
             @section('content')
+            <br></br>
             <div class="container mt-5">
                 <div class="row justify-content-center align-items-center">
-                    <div class="card" style="width: 50rem;">
+                    <div class="card" style="width: 50rem; margin-left: 150px">
                         <div class="card-header">
                             <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Saran Pengunjung</h5></b>
                         </div>

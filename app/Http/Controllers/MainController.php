@@ -12,6 +12,10 @@ class MainController extends Controller
     //     $this->middleware('auth');
     // }
 
+    public function index(){
+        return view('index');
+    }
+
     public function about()
     {
         return view('about');
