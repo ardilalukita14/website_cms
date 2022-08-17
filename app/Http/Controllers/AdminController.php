@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\pengumuman;
 
 class AdminController extends Controller
 {
@@ -16,7 +17,11 @@ class AdminController extends Controller
     {
         $jumlah_user = DB::table('users')->count();
         $jumlah_saran = DB::table('saran')->count();
-        return view('indexadmin',  compact('jumlah_user', 'jumlah_saran'));
+        $jumlah_komentar = DB::table('komentar')->count();
+        $jumlah_berita = DB::table('berita')->count();
+        $pengumuman = Pengumuman::paginate(5);
+        return view('indexadmin',  compact('jumlah_user', 'jumlah_saran', 'jumlah_komentar', 'jumlah_berita', 'pengumuman'));
+        
     }
 
     public function adminbutton()

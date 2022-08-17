@@ -17,8 +17,10 @@
 </head>
 
 <body>
+  
         @include('sweetalert::alert')
         @include('layoutsadmin.footer')
+
 
   <script src="../dist/modules/jquery.min.js"></script>
   <script src="../dist/modules/popper.js"></script>

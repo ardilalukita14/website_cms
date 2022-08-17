@@ -10,10 +10,14 @@ use Session;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $data = Berita::orderBy('created_at','DESC')
-                ->paginate(10);
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $data = Berita::where('judul', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $data = Berita::orderBy('id', 'desc')->paginate(10); // Pagination menampilkan 5 data
+        }
         return view('admin.berita',compact('data'));
     }
 

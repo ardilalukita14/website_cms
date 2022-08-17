@@ -1,7 +1,26 @@
-@extends('saran.app')
+@extends('admin.app')
     <!-- Preloader Start-->
 @include('layoutsadmin.header')
 @extends('layoutsadmin.contents')
+@include('editor.sidebar')
+  
+      <div class="main-sidebar">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="/">BeRiKoMa</a>
+          </div>
+          <div class="sidebar-user">
+            <div class="sidebar-user-picture">
+              <img alt="image" src="../dist/img/avatar/people.png" width="30px" height="50px">
+            </div>
+            <div class="sidebar-user-details">
+              <div class="user-name" style= "font-size: 18px; font-family: Arial, Helvetica>Profile">{{ Auth::user()->name }}</div>
+              <div class="user-role" style= "font-size: 12px; font-family: Arial, Helvetica>Profile">
+              {{ Auth::user()->role }}
+              </div>
+            </div>
+          </div>
+
 @include('editor.sidebar')
 
 <!-- Form Search -->
@@ -21,12 +40,14 @@
                             <a href="{{route('admin.create')}}" class="btn btn-info">TAMBAH BERITA</a>
                         </div> -->
                         <div class="col-md-4">
-                        <form action="{{route('admin.berita')}}" class="row g-3" method="GET">
-                                {{csrf_field()}}
-                                <div class="form-group">
-                                    <input type="text" name="cari" class="form-control" placeholder="Masukan Judul Berita">
-                                </div>
-                            </form>
+                        <form action="{{route('editor.berita')}}" class="row g-3" method="GET">
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
+                        </span>
+                    </div>
+                </form>
                         </div>
                     </div>
                     @if(Session::has('success'))
@@ -42,7 +63,7 @@
                             <th>AUTHOR</th>
                             <th>KATEGORI</th>
                             <th>TANGGAL</th>
-                            <th width="220px">AKSI</th>
+                            <th width="250px">AKSI</th>
                         </tr>
                         @foreach($data as $d)
                         <tr>
@@ -58,8 +79,14 @@
                         </tr>
                         @endforeach
                 </table>
+                <div class="pagination" style="margin-left:120px">{{ $data->links() }}</div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  </div>
 
-                    <br>
-                    <p class="text-asmara>{{$data->links()}}</p>
-            @endsection
-
+@endsection

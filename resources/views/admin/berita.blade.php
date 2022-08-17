@@ -1,11 +1,42 @@
-@extends('saran.app')
-    <!-- Preloader Start-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" name="viewport">
+  <title>AnalisaBerita</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
+
+  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+
+  <link rel="stylesheet" href="../dist/modules/summernote/summernote-lite.css">
+  <link rel="stylesheet" href="../dist/modules/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../dist/css/demo.css">
+  <link rel="stylesheet" href="../dist/css/style.css">
+
+</head>
+
+<body>
+
+  <script src="../dist/modules/jquery.min.js"></script>
+  <script src="../dist/modules/popper.js"></script>
+  <script src="../dist/modules/tooltip.js"></script>
+  <script src="../dist/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../dist/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="../dist/modules/scroll-up-bar/dist/scroll-up-bar.min.js"></script>
+  <script src="../dist/js/sa-functions.js"></script>
+  
+  <script src="../dist/modules/chart.min.js"></script>
+  <script src="../dist/modules/summernote/summernote-lite.js"></script>
+
 @include('layoutsadmin.header')
 @extends('layoutsadmin.contents')
+@section('content')
 @include('layoutsadmin.sidebar')
 
 
-            <!-- Form Search -->
+
     <section class="section">
       <div class="container mt-2">
         <div class="row">
@@ -18,18 +49,19 @@
             <section class="section">
             <div class="container mt-5">
                     <div class="row" style="margin-left: 150px;">
-                        <!-- <div class="col-md-8">
-                            <a href="{{route('admin.create')}}" class="btn btn-info">TAMBAH BERITA</a>
-                        </div> -->
-                        <div class="col-md-4">
-                        <form action="{{route('admin.berita')}}" class="row g-3" method="GET">
-                                {{csrf_field()}}
-                                <div class="form-group">
-                                    <input type="text" name="cari" class="form-control" placeholder="Masukan Judul Berita">
-                                </div>
-                            </form>
-                        </div>
+                     <!-- Form Search -->
+                    <form action="{{route('admin.berita')}}" class="row g-3" method="GET">
+                    <div class="input-group custom-search-form">
+                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
+                        </span>
                     </div>
+                </form>
+            </div>
+            <!-- End Form Search -->
+        </div>
+    </div>
                     @if(Session::has('success'))
                         <div class="alert alert-success" style="margin-left:150px">
                             <p>{{Session::get('success')}}</p>
@@ -37,15 +69,19 @@
                     @endif
                     <br>
 
-                    <table class="table table-striped" style="margin-left: 120px;">
-                        <tr class="table-info">
-                            <th>JUDUL</th>
-                            <th>AUTHOR</th>
-                            <th>KATEGORI</th>
-                            <th>TANGGAL</th>
-                            <th width="220px">AKSI</th>
+                    <div class="container">
+                        <table class="table table-striped" style="margin-left: 120px;">
+                            <thead>    
+                            <tr class="table-info">
+                                <th>JUDUL</th>
+                                <th>AUTHOR</th>
+                                <th>KATEGORI</th>
+                                <th>TANGGAL</th>
+                                <th width="250px">AKSI</th>
                         </tr>
-                        @foreach($data as $d)
+                        </thead>
+                        <tbody>
+                             @foreach($data as $d)
                         <tr>
                             <td>{{$d->judul}}</td>
                             <td>{{$d->author}}</td>
@@ -58,9 +94,11 @@
                             </td>
                         </tr>
                         @endforeach
+                    </tbody>
                 </table>
-
-                    <br>
-                    <p class="text-asmara>{{$data->links()}}</p>
-            @endsection
+                <div class="pagination" style="margin-left:120px">{{ $data->links() }}</div>
+            </div>
+        </body>
+</html>
+ @endsection
 

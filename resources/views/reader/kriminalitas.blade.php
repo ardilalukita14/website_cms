@@ -18,7 +18,7 @@
                                     <img src="{{asset('foto/'.$all->foto)}}" alt="" style="height:400px; width:400px">
                                 </div>
                                 <div class="banner-cap">
-                                    <p>Trending</p>
+                                    <!-- <p>Trending</p> -->
                                    <h3>{{$all->judul}}</a></h3>
                                    </div>
                             </div>

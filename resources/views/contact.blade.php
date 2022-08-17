@@ -9,8 +9,9 @@
         <section class="contact-section">
             <div class="container">
                 <div class="d-none d-sm-block mb-5 pb-4">
+                    <br></br>
                 <div class="map">
-                    <iframe src="https://maps.google.com/maps?q=9GGC+3JQ,%20Kartoharjo,%20Kec.%20Kartoharjo,%20Kota%20Madiun,%20Jawa%20Timur%2063117&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
+                    <iframe src="https://maps.google.com/maps?q=Jl.%20Perintis%20Kemerdekaan%20No.32,%20Kartoharjo,%20Kec.%20Kartoharjo,%20Kota%20Madiun,%20Jawa%20Timur%2063117&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                     <script>
                         function initMap() {
@@ -63,22 +64,22 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="pesan" id="pesan" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pesan'" placeholder=" Masukkan pesan" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-transform: lowercase"></textarea>
+                                        <textarea class="form-control w-100" name="pesan" id="pesan" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pesan'" placeholder=" Masukkan pesan" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="nama" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Nama" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-transform: lowercase">
+                                        <input class="form-control valid" name="nama" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Nama" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-transform: lowercase">
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subjek" id="subjek" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Subjek" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-transform: lowercase">
+                                        <input class="form-control" name="subjek" id="subjek" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Subjek" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
                                     </div>
                                 </div>
                             </div>

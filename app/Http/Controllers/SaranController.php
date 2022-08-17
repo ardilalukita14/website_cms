@@ -95,7 +95,7 @@ class SaranController extends Controller
      */
     public function destroy($id)
     {
-        Alert::success('Saran Berhasi Dihapus','Sukses'); 
+        Alert::success('Saran Berhasil Dihapus','Sukses'); 
         Saran::find($id)->delete();
         return redirect()->route('saran.index')
             ->with('success', 'Data Berhasil Dihapus');

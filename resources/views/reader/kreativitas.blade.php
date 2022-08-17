@@ -18,7 +18,7 @@
                                     <img src="{{asset('foto/'.$all->foto)}}" alt="" style="height:400px; width:400px">
                                 </div>
                                 <div class="banner-cap">
-                                    <p>Trending</p>
+                                    <!-- <p>Trending</p> -->
                                    <h3>{{$all->judul}}</a></h3>
                                    </div>
                             </div>
@@ -308,61 +308,50 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="section-tittle section-tittle2 mb-35">
-                                    <h2 class="mb-10">Videos</h2>
-                                    <p>TOP OF THE WEEK PLAYLIST</p>
+                                    <h2 class="mb-10">NEWS</h2>
+                                    <p>TOP OF WEEK</p>
                                     <p class="video-cap">
-                                        Calling time on<br> irresponsible junk<br> food advertising
+                                        Berita populer<br> minggu ini<br> dalam website BeRiKoMa
                                     </p>
-                                    <small>Business / 5.0m</small>
                                 </div>
                             </div>
                             <!--Left Single -->
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-6 col-md-8">
                                 <div class="single-baner-nw4 mb-30">
+                                @foreach ($tops as $tp)
                                     <div class="banner-img-cap4">
                                         <div class="banner-img4">
-                                            <img src="assets/img/gallery/video_img1.png" alt="">
-                                            <!--video iocn -->
-                                            <div class="video-icon video-icon2">
-                                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
-                                            </div>
+                                        <a href="{{route('reader.show_news',$tp->id)}}" style="color:black"> 
+                                            <img src="{{asset('foto/'.$tp->foto)}}" alt="">
                                         </div>
                                         <div class="banner-cap4">
-                                            <h3><a href="/post_details">Editors with strong points  of view</a></h3>
+                                            <h3><a href="/post_details">{{$tp->judul}}</a></h3>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <div class="single-baner-nw4 mb-30">
-                                    <div class="banner-img-cap4">
-                                        <div class="banner-img4">
-                                            <img src="assets/img/gallery/video_img2.png" alt="">
-                                            <!--video iocn -->
-                                            <div class="video-icon video-icon2">
-                                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="banner-cap4">
-                                            <h3><a href="/post_details">Dill is part of an unexpected groundswell</a></h3>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="right-content">
-                        <div class="video-img">
-                            <img src="assets/img/gallery/video_bg.png" alt="">
-                            <!--video iocn -->
-                            <div class="video-icon video-icon2">
-                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
+                    <div class="col-lg-6 col-md-8">
+                                <div class="single-baner-nw4 mb-30">
+                                @foreach ($kreatif as $kr)
+                                    <div class="banner-img-cap4">
+                                        <div class="banner-img4">
+                                        <a href="{{route('reader.show_news',$kr->id)}}" style="color:black"> 
+                                            <img src="{{asset('foto/'.$kr->foto)}}" alt="">
+                                        </div>
+                                        <div class="banner-cap4">
+                                            <h3><a href="/post_details">{{$kr->judul}}</a></h3>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <!-- Video Area End -->
         <!-- Nwes slider Start -->
         <div class="nes-slider-area pt-80 pb-80">

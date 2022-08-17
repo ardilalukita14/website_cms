@@ -13,10 +13,25 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = Kategori::all();
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $data = Kategori::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $data = Kategori::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        }
        return view('admin.kategori',compact('data'));
+    }
+
+    public function kategori_ekonomi()
+    {
+        $category =  Kategori::orderBy('created_at','DESC')
+        ->where('kategori_id',5)
+        ->where('status','aktif')
+        ->take(4)
+        ->get();
+        return view('reader.ekonomi',compact('ekonomi')) ;
     }
 
     /**
@@ -60,7 +75,11 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        //
+        $ekonom = Kategori::orderBy('created_at','DESC')
+                ->where('berita_id',$id)
+                ->where('status','aktif')
+                ->get();
+        return view('reader.detail',compact('news','semua','komen'));
     }
 
     /**

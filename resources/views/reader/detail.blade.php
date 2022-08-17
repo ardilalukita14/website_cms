@@ -35,13 +35,13 @@
 		<form action="{{route('reader.komentar',$news->id)}}" method="post">
 			{{csrf_field()}}
 			<div class="form-group">
-				<textarea class="form-control" name="isi" required="" placeholder="Masukan Komentar"></textarea>
+				<textarea class="form-control" name="isi" required="" placeholder="Masukan Komentar" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></textarea>
 			</div>
 			<div class="form-group">
-				<input type="text" name="nama" required=""  class="form-control" placeholder="Masukan Username">
+				<input type="text" name="nama" required=""  class="form-control" placeholder="Masukan Username" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
 			</div>
 			<div class="form-group">
-				<input type="email" name="email" class="form-control" placeholder="Masukan Email">
+				<input type="email" name="email" class="form-control" placeholder="Masukan Email" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
 			</div>
 			<input type="submit" value="KIRIM" class="btn btn-info">
 		</form>

@@ -33,15 +33,15 @@
                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-md-12">
-                            <form action="#" class="search-box">
+                        <!-- <div class="col-xl-5 col-lg-5 col-md-12">
+                            <form action="{{route('reader.show')}}" class="search-box" method="GET">
                                 <div class="input-form">
-                                    <input type="text" placeholder="Enter your email">
+                                    <input type="text" class="form-control" name="search" placeholder="Search...">
                                 </div>
-                                <div class="search-form">
-                                    <a href="#">Subscribe</a>
+                                <div class="search-form" style="background-color:blue;">
+                                <button class="btn btn-secondary" type="submit" style="height:60px"></i> Search</button>
                                 </div>	
-                            </form>
+                            </form> -->
                               <!-- Social -->
                               <div class="header-social">
                                         <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
@@ -63,7 +63,7 @@
                         <div class="col-xl-9 col-lg-8">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Analisa Berita | Kota Madiun <i class="fa fa-heart" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Berita | Kota Madiun <i class="fa fa-heart" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                                 </div>
                         </div>

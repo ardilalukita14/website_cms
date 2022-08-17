@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaranController;
+use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\EditorController;
@@ -20,9 +21,9 @@ use App\Http\Controllers\TopikController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
     Auth::routes();
@@ -31,6 +32,7 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'indexHome'])->name('home');
 
 // Route::get('/admin', [App\Http\Controllers\HomeController::class, 'indexRole'])->name('indexRole');
+// Route::get('/', [App\Http\Controllers\MainController::class, 'index'])->name('index');
 Route::get('/about', [App\Http\Controllers\MainController::class, 'about'])->name('about');
 Route::get('/contact', [App\Http\Controllers\MainController::class, 'contact'])->name('contact');
 Route::get('/category', [App\Http\Controllers\MainController::class, 'category'])->name('category');
@@ -101,18 +103,19 @@ Route::get('/teknologi','App\Http\Controllers\ReaderController@teknologi')->name
 Route::get('/ekonomi','App\Http\Controllers\ReaderController@ekonomi')->name('reader.ekonomi');
 Route::get('/senbud','App\Http\Controllers\ReaderController@senbud')->name('reader.senbud');
 Route::get('/pertanian','App\Http\Controllers\ReaderController@pertanian')->name('reader.pertanian');
-Route::get('/kreativitas','App\Http\Controllers\ReaderController@kraetivitas')->name('reader.kreativitas');
+Route::get('/kreativitas','App\Http\Controllers\ReaderController@kreativitas')->name('reader.kreativitas');
 Route::get('/kriminalitas','App\Http\Controllers\ReaderController@kriminalitas')->name('reader.kriminalitas');
 
 Route::get('/','App\Http\Controllers\ReaderController@index')->name('reader.show');
-Route::post('/user/news/cariberita','App\Http\Controllers\ReaderController@cari')->name('reader.cari');
+// Route::get('/show','App\Http\Controllers\ReaderController@search')->name('search');
 Route::get('/news/{id}','App\Http\Controllers\ReaderController@show')->name('reader.show_news');
 Route::post('/news/{id}','App\Http\Controllers\ReaderController@update')->name('reader.komentar');
 Route::get('/user/list/{id}','App\Http\Controllers\ReaderController@list')->name('reader.list');
 
 Route::get('/profileadmin', [App\Http\Controllers\AdminController::class, 'profile'])->name('profile');
 Route::resource('saran',  SaranController::class);
-
+Route::resource('pengumuman',  PengumumanController::class);
+Route::get('/informasi', [App\Http\Controllers\PengumumanController::class, 'tampil'])->name('pengumuman.tampil');
 
 // Route::group(['middleware' => 'auth'], function () {
     Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');

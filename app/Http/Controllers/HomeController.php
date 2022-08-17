@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Berita;
 
 class HomeController extends Controller
 {
@@ -12,10 +13,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -30,9 +31,15 @@ class HomeController extends Controller
         return view('indexadmin', compact('jumlah_user', 'jumlah_saran'));
     }
 
-    public function indexHome()
+    public function indexHome(Request $request)
     {
-        return view('home');
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $data = Berita::where('judul', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $data = Berita::orderBy('id', 'desc')->paginate(10); // Pagination menampilkan 5 data
+        }
+        return view('home',compact('data'));
     }
     //     $role=Auth::user()->role;
 

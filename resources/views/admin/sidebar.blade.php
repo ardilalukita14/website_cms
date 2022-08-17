@@ -1,4 +1,21 @@
-<ul class="sidebar-menu">
+<div class="main-sidebar">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="/">ANALISA BERITA</a>
+          </div>
+          <div class="sidebar-user">
+            <div class="sidebar-user-picture">
+              <img alt="image" src="../dist/img/avatar/people.png" width="30px" height="50px">
+            </div>
+            <div class="sidebar-user-details">
+              <div class="user-name" style= "font-size: 18px; font-family: Arial, Helvetica>Profile">{{ Auth::user()->name }}</div>
+              <div class="user-role" style= "font-size: 12px; font-family: Arial, Helvetica>Profile">
+              {{ Auth::user()->role }}
+              </div>
+            </div>
+          </div>
+              
+          <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="active">
               <a href="/admin"><i class="ion ion-speedometer"></i><span>Dashboard</span></a>
