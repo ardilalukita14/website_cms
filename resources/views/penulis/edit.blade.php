@@ -94,5 +94,6 @@
                     </select>
                 </div>
                 <input type="submit" value="SIMPAN" class="btn btn-info">
+                <br></br>
             </form>
             @endsection

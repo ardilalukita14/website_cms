@@ -60,10 +60,9 @@
                 </form>
             </div>
             <!-- End Form Search -->
-        </div>
-    </div>
+    <br></br>
                     @if(Session::has('success'))
-                        <div class="alert alert-success" style="margin-left:150px">
+                        <div class="alert alert-success" style="margin-left:165px">
                             <p>{{Session::get('success')}}</p>
                         </div>
                     @endif

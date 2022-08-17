@@ -434,7 +434,7 @@ class ReaderController extends Controller
         return view('reader.pertanian',compact('semua','ekonomi','kesehatan', 'lifestyle', 'teknologi','senbud', 'pertanian', 'kreatif', 'kriminal', 'tops', 'latest')) ;
     }
 
-    public function kraetivitas()
+    public function kreativitas()
     {
         $semua = Berita::orderBy('created_at','DESC')
                 ->where('status','aktif')

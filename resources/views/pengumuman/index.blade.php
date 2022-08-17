@@ -58,10 +58,9 @@
             <!-- End Form Search -->
         </div>
     </div>
-                
-        <div class="col-xl-12 col-md-12">
+    <br></br>
           
-
+        <div class="col-xl-12 col-md-12">
                 <table class="table table-bordered" style="background-color: #FFDAB9; margin-left: 100px;">
                     <tr>
                         <th width="400px">Judul</th>

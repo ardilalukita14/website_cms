@@ -57,10 +57,8 @@
             <!-- End Form Search -->
         </div>
     </div>
-                
+    <br></br>          
         <div class="col-xl-12 col-md-12">
-          
-
                 <table class="table table-bordered" style="background-color: #FFDAB9; margin-left: 100px;">
                     <tr>
                         <th width="800px">Nama</th>

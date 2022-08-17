@@ -108,6 +108,7 @@ Route::get('/kriminalitas','App\Http\Controllers\ReaderController@kriminalitas')
 
 Route::get('/','App\Http\Controllers\ReaderController@index')->name('reader.show');
 // Route::get('/show','App\Http\Controllers\ReaderController@search')->name('search');
+Route::post('/news/cariberita','App\Http\Controllers\ReaderController@cari')->name('reader.cr_berita');
 Route::get('/news/{id}','App\Http\Controllers\ReaderController@show')->name('reader.show_news');
 Route::post('/news/{id}','App\Http\Controllers\ReaderController@update')->name('reader.komentar');
 Route::get('/user/list/{id}','App\Http\Controllers\ReaderController@list')->name('reader.list');
