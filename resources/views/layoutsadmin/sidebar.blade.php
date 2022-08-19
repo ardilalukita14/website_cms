@@ -14,6 +14,7 @@
               </div>
             </div>
           </div>
+          <div class="main-wrapper">
               
 <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>

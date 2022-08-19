@@ -1,7 +1,7 @@
 <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="/">ANALISA BERITA</a>
+            <a href="/">BERITA KOTA MADIUN</a>
           </div>
           <div class="sidebar-user">
             <div class="sidebar-user-picture">
