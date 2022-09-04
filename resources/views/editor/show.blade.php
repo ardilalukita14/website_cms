@@ -55,7 +55,7 @@
                                 <li class="list-group-item" style="font-size: 16px;"><b>Judul Berita: </b>{{$data->judul}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Author Berita: </b>{{$data->author}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Terbit: </b>{{$data->tanggal}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Isi Berita: </b>{{$data->isi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Isi Berita: </b>{!!$data->isi!!}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Berita Populer: </b>{{$data->top_news}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Status Berita: </b>{{$data->status}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Kategori Berita: </b>{{$data->kategori->nama}}</li>
@@ -64,6 +64,7 @@
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('editor.berita') }}" style="font-size: 16px; margin-left: 40px">Kembali</a>
+                        <br></br>
                     </div>
                 </div>
             </div>

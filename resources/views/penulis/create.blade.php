@@ -6,7 +6,8 @@
   <title>BeRiKoMa</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
-  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
@@ -56,11 +57,11 @@
                 </div>
                 <div class="form-group">
                     <label>MASUKAN AUTHOR BERITA</label>
-                    <input type="text" name="author" class="form-control" required="">
+                    <input type="text" name="author" class="form-control" required="" value="{{ Auth::user()->name }}">
                 </div>
                 <div class="form-group">
                     <label>MASUKAN ISI BERITA</label>
-                    <textarea class="form-control" name="isi" required=""></textarea>
+                    <textarea class="ckeditor form-control valid" name="isi" required=""></textarea>
                 </div>
                 <div class="form-group">
                     <label>MASUKAN KATEGORI</label>
@@ -72,8 +73,17 @@
                 </div>
                 <div class="form-group">
                     <label>MASUKAN FOTO</label>
-                    <input type="file" name="foto" class="form-control" required="">
+                    <input type="file" name="foto" class="form-control" required="" style="height: 50px;">
                 </div>
                 <input type="submit" value="SIMPAN" class="btn btn-info">
+                <br></br>
             </form>
             @endsection
+
+            <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+            <script type="text/javascript">
+            $(document).ready(function () {
+                $('.ckeditor').ckeditor();
+            });
+            </script>

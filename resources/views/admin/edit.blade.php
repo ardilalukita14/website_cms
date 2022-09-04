@@ -6,7 +6,8 @@
   <title>BeRiKoMa</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
-  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
@@ -57,11 +58,16 @@
                 </div>
                 <div class="form-group">
                     <label>MASUKAN AUTHOR BERITA</label>
-                    <input type="text" name="author" class="form-control" required="" value="{{$berita->author}}" >
+                    <select name="author" class="form-control">
+                        <option>{{$berita->author}}</option>
+                        <option>{{$berita->author}}</option>
+                        <option>{{ Auth::user()->name }}</option>
+                    </select>
+                    <!-- <input type="text" name="author" class="form-control" required="" value="{{$berita->author}}" > -->
                 </div>
                 <div class="form-group">
                     <label>MASUKAN ISI BERITA</label>
-                    <textarea class="form-control" name="isi" required="">{{$berita->isi}}</textarea>
+                    <textarea class="ckeditor form-control valid" name="isi" required="">{{$berita->isi}}</textarea>
                 </div>
                 <div class="form-group">
                     <label>MASUKAN KATEGORI</label>
@@ -76,7 +82,7 @@
                     <label>MASUKAN FOTO</label>
                     <img src="{{asset('foto/'.$berita->foto)}}" style="width: 500px; height: 250px;">
                     <br></br>
-                    <input type="file" name="foto" class="form-control">
+                    <input type="file" name="foto" class="form-control" style="height: 50px;">
                 </div>
                 <div class="form-group">
                     <label>TOP NEWS</label>
@@ -99,3 +105,10 @@
             </form>
             @endsection
             
+            <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+            <script type="text/javascript">
+            $(document).ready(function () {
+                $('.ckeditor').ckeditor();
+            });
+            </script>

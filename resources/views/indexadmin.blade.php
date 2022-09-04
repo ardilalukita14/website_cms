@@ -6,7 +6,8 @@
   <title>BeRiKoMa</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
-  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
@@ -124,7 +125,7 @@
                     </div>
                     <div class="form-group">
                       <label>Isi</label>
-                      <textarea class="form-control w-100" name="isi" id="isi"></textarea>
+                      <textarea class="ckeditor form-control valid" name="isi" id="isi"></textarea>
                     </div>
                     <div class="form-group">
                     <label>Status</label>
@@ -206,5 +207,14 @@
       </div>
     </div>
   </div>
+  <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.ckeditor').ckeditor()({
+              height:50,
+            });
+});
+</script>
                    
                   

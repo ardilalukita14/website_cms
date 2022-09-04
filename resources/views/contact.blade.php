@@ -1,4 +1,4 @@
-@extends('contents.layouts.app')
+@extends('reader.contact.app')
     <!-- Preloader Start-->
 @include('contents.layouts.header')
 @extends('contents.layouts.contents')
@@ -64,7 +64,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="pesan" id="pesan" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pesan'" placeholder=" Masukkan pesan" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></textarea>
+                                    <textarea class="ckeditor form-control valid" name="pesan" id="pesan" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter pesan'" placeholder=" Masukkan pesan" required style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">

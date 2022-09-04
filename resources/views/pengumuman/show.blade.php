@@ -53,7 +53,7 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item" style="font-size: 16px;"><b>Judul: </b>{{$pengumuman->judul}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Isi: </b>{{$pengumuman->isi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Isi: </b>{!!$pengumuman->isi!!}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('pengumuman.index') }}" style="font-size: 16px;">Kembali</a>

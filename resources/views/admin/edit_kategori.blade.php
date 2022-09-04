@@ -6,7 +6,8 @@
   <title>BeRiKoMa</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
-  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
@@ -56,7 +57,7 @@
 			</div>
 			<div class="form-group">
 				<label>Masukan Keterangan Kategori</label>
-				<textarea class="form-control" name="ket" required="" style="height: 150px">{{$data->keterangan}}</textarea>
+				<textarea class="ckeditor form-control valid" name="ket" required="" style="height: 150px">{{$data->keterangan}}</textarea>
 			</div>
 			<div class="form-group">
 				<label>Masukan Status</label>
@@ -70,3 +71,13 @@
 			<br></br>
 		</form>
 		@endsection
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+			$('.ckeditor').ckeditor()({
+					height:50,
+					});
+		});
+		</script>
+                 

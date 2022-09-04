@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Kategori;
+use App\Models\User;
 use Session;
 
 
@@ -18,7 +19,8 @@ class ArticleController extends Controller
             //fungsi eloquent menampilkan data menggunakan pagination
             $data = Berita::orderBy('id', 'desc')->paginate(10); // Pagination menampilkan 5 data
         }
-        return view('admin.berita',compact('data'));
+        $user=User::all();
+        return view('admin.berita',compact('data', 'user'));
     }
 
     public function cari(Request $request)
@@ -36,7 +38,8 @@ class ArticleController extends Controller
     public function create()
     {
         $data=Kategori::all();
-        return view('admin.create',compact('data'));
+        $user=User::all();
+        return view('admin.create',compact('data', 'user'));
     }
 
     /**

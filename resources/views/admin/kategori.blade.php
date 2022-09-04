@@ -6,7 +6,8 @@
   <title>BeRiKoMa</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
 
-  <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="../dist/modules/bootstrap/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/modules/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="../dist/modules/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
 
@@ -56,7 +57,7 @@
 			<div class="col-md-4">
 			<form action="{{route('admin.kategori')}}" class="row g-3" method="GET">
                     <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <input type="text" class="form-control" name="search" placeholder="Search..." style="height:48px;">
                         <span class="input-group-btn">
                             <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
                         </span>
@@ -82,7 +83,7 @@
 			@foreach($data as $d)
 			<tr>
 				<td>{{$d->nama}}</td>
-				<td>{{$d->keterangan}}</td>
+				<td>{!!$d->keterangan!!}</td>
 				<td>{{$d->status}}</td>
 				<td>{{$d->tanggal}}</td>
 				<td width="250px">
@@ -109,7 +110,7 @@
 							</div>
 							<div class="form-group">
 								<label>Masukan Keterangan Kategori</label>
-								<textarea class="form-control" name="ket" required="" style="height: 150px"></textarea>
+								<textarea class="ckeditor form-control valid" name="ket" required="" style="height: 150px"></textarea>
 							</div>
 							<input type="submit" value="SIMPAN" class="btn btn-info btn-sm">
 						</form>
@@ -117,3 +118,13 @@
 				</div>
 			</div>
 		</div>
+		<script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function () {
+			$('.ckeditor').ckeditor()({
+					height:50,
+					});
+		});
+		</script>
+                   

@@ -77,7 +77,7 @@
                                 </div>
                                 <!-- /.col -->
                                 <div class="login-footer">
-                                    <p>Silahkan <a href="/login">Login</a> untuk mengakses halaman Admin</p>
+                                    <p>Silahkan <a href="/login">Login</a> untuk mengakses halaman berikutnya</p>
                                     <button class="submit-btn3"><a>{{ __('Login') }}</a> &nbsp;</button>
                                 </div>
                                 <!-- /.col -->
