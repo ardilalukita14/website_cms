@@ -13,7 +13,7 @@
 <div class="row">
 	<div class="col-md-7" style="margin-left:30px">
 		<p align="center"><img style="width: 600px;height: 300px;" src="{{asset('foto/'.$news->foto)}}"></p>
-        <div class="mb-10;"><p align="justify" style="margin-top: 40px;">{{$news->isi}}</p></div>
+        <div class="mb-10;"><p align="justify" style="margin-top: 40px;">{!!$news->isi!!}</p></div>
 		<hr><br>
 		@if(Session::has('success'))
 		<div class="alert alert-info">

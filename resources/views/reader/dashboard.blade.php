@@ -52,7 +52,7 @@
                                 <div class="banner-cap2">
                                     <p>Lifestyle</p>
                                     <h3>{{$ls->judul}}</a></h3>
-                                    <p  class="normal">{{substr($ls->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($ls->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                                 <div class="banner-cap2">
                                     <p>Technology</p>
                                     <h3>{{$tekno->judul}}</a></h3>
-                                    <p  class="normal">{{substr($tekno->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($tekno->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                 <div class="banner-cap2">
                                     <p>EKONOMI</p>
                                     <h3>{{$eko->judul}}</a></h3>
-                                    <p  class="normal">{{substr($eko->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($eko->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                                 <div class="banner-cap2">
                                     <p>SENI DAN KEBUDAYAAN</p>
                                     <h3>{{$sb->judul}}</a></h3>
-                                    <p  class="normal">{{substr($sb->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($sb->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                                 <div class="banner-cap2">
                                     <p>PERTANIAN</p>
                                     <h3>{{$pr->judul}}</a></h3>
-                                    <p  class="normal">{{substr($pr->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($pr->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                                 <div class="banner-cap2">
                                     <p>KREATIVITAS</p>
                                     <h3>{{$kr->judul}}</a></h3>
-                                    <p  class="normal">{{substr($kr->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($kr->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
                                 <div class="banner-cap2">
                                     <p>KRIMINALITAS</p>
                                     <h3>{{$krim->judul}}</a></h3>
-                                    <p  class="normal">{{substr($krim->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($krim->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                                 <div class="job-tittle">
                                     <span>Trending</span>
                                     <h4 style="width:600px">{{$tp->judul}}</a></h4>
-                                    <p style="width:600px">{{substr($tp->isi,0,100)}}...</p>
+                                    <p style="width:600px">{!!substr($tp->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +445,7 @@
                                     <p>Technology</p>
                                    <h3><a href="/post_details">{{$lts->judul}}</a></h3>
                                    <h3 style="font-size:12px;">{{$lts->author}}, ({{$lts->tanggal}})</h10>
-                                    <p class="blog-text" style="text-transform: normal !important;">{{substr($lts->isi,0,100)}}...</p>
+                                    <p class="blog-text" style="text-transform: normal !important;">{!!substr($lts->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>

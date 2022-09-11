@@ -63,7 +63,7 @@
                                         <div class="banner-cap2 banner-cap3">
                                             <p>LIFESTYLE</p>
                                            <h3>{{$ls->judul}}</a></h3>
-                                            <p class="normal">{{substr($ls->isi,0,200)}}...</p>
+                                            <p class="normal">{!!substr($ls->isi,0,200)!!}...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@
                                         <div class="banner-cap2 banner-cap3">
                                             <p>KESEHATAN</p>
                                             <h3>{{$ksh->judul}}</a></h3>
-                                            <p  class="normal">{{substr($ksh->isi,0,200)}}...</p>
+                                            <p  class="normal">{!!substr($ksh->isi,0,200)!!}...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                 <div class="banner-cap2">
                                     <p>Technology</p>
                                     <h3>{{$tekno->judul}}</a></h3>
-                                    <p  class="normal">{{substr($tekno->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($tekno->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 <div class="banner-cap2">
                                     <p>EKONOMI</p>
                                     <h3>{{$eko->judul}}</a></h3>
-                                    <p  class="normal">{{substr($eko->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($eko->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -195,7 +195,7 @@
                                 <div class="banner-cap2">
                                     <p>SENI DAN KEBUDAYAAN</p>
                                     <h3>{{$sb->judul}}</a></h3>
-                                    <p  class="normal">{{substr($sb->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($sb->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -225,7 +225,7 @@
                                 <div class="banner-cap2">
                                     <p>PERTANIAN</p>
                                     <h3>{{$pr->judul}}</a></h3>
-                                    <p  class="normal">{{substr($pr->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($pr->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                                 <div class="banner-cap2">
                                     <p>KREATIVITAS</p>
                                     <h3>{{$kr->judul}}</a></h3>
-                                    <p  class="normal">{{substr($kr->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($kr->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                                 <div class="banner-cap2">
                                     <p>KRIMINALITAS</p>
                                     <h3>{{$krim->judul}}</a></h3>
-                                    <p  class="normal">{{substr($krim->isi,0,100)}}...</p>
+                                    <p  class="normal">{!!substr($krim->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -304,12 +304,12 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="section-tittle section-tittle2 mb-35">
-                                    <h2 class="mb-10">Videos</h2>
-                                    <p>TOP OF THE WEEK PLAYLIST</p>
+                                    <h2 class="mb-10">BeRiKoMa</h2>
+                                    <p>Berita Kota Madiun</p>
                                     <p class="video-cap">
-                                        Calling time on<br> irresponsible junk<br> food advertising
+                                        Website untuk menginformasikan<br> berita terkini di Kota Madiun
                                     </p>
-                                    <small>Business / 5.0m</small>
+                                    <small>Icon Kota Madiun</small>
                                 </div>
                             </div>
                             <!--Left Single -->
@@ -317,14 +317,14 @@
                                 <div class="single-baner-nw4 mb-30">
                                     <div class="banner-img-cap4">
                                         <div class="banner-img4">
-                                            <img src="assets/img/gallery/video_img1.png" alt="">
+                                            <img src="assets/img/gallery/img1.jpg" alt="">
                                             <!--video iocn -->
-                                            <div class="video-icon video-icon2">
+                                            <!-- <div class="video-icon video-icon2">
                                                 <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="banner-cap4">
-                                            <h3><a href="/post_details">Editors with strong points  of view</a></h3>
+                                            <h3><a href="#">Pemerintah Kota Madiun</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -333,29 +333,61 @@
                                 <div class="single-baner-nw4 mb-30">
                                     <div class="banner-img-cap4">
                                         <div class="banner-img4">
-                                            <img src="assets/img/gallery/video_img2.png" alt="">
+                                            <img src="assets/img/gallery/img2.jpg" alt="">
                                             <!--video iocn -->
-                                            <div class="video-icon video-icon2">
+                                            <!-- <div class="video-icon video-icon2">
                                                 <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="banner-cap4">
-                                            <h3><a href="/post_details">Dill is part of an unexpected groundswell</a></h3>
+                                            <h3><a href="#">Wisata Kota Madiun</a></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="right-content">
-                        <div class="video-img">
-                            <img src="assets/img/gallery/video_bg.png" alt="">
-                            <!--video iocn -->
-                            <div class="video-icon video-icon2">
-                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s"><i class="fas fa-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=Jl.%20Perintis%20Kemerdekaan%20No.32,%20Kartoharjo,%20Kec.%20Kartoharjo,%20Kota%20Madiun,%20Jawa%20Timur%2063117&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="700px" height="400px" style="border:0; margin-top: -50px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <script>
+                        function initMap() {
+                            var uluru = {
+                                lat: -25.363,
+                                lng: 131.044
+                            };
+                            var grayStyles = [{
+                                    featureType: "all",
+                                    stylers: [{
+                                            saturation: -90
+                                        },
+                                        {
+                                            lightness: 50
+                                        }
+                                    ]
+                                },
+                                {
+                                    elementType: 'labels.text.fill',
+                                    stylers: [{
+                                        color: '#ccdee9'
+                                    }]
+                                }
+                            ];
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                center: {
+                                    lat: -31.197,
+                                    lng: 150.744
+                                },
+                                zoom: 9,
+                                styles: grayStyles,
+                                scrollwheel: false
+                            });
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
+                    </script>
+    
+                </div>
                 </div>
             </div>
         </div>
@@ -426,7 +458,7 @@
                                 <div class="job-tittle">
                                     <span>Trending</span>
                                     <h4 style="width:600px">{{$tp->judul}}</a></h4>
-                                    <p style="width:600px">{{substr($tp->isi,0,100)}}...</p>
+                                    <p style="width:600px">{!!substr($tp->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
@@ -467,7 +499,7 @@
                                     <p>Technology</p>
                                    <h3>{{$lts->judul}}</a></h3>
                                    <h3 style="font-size:12px;">{{$lts->author}}, ({{$lts->tanggal}})</h10>
-                                    <p class="blog-text" style="text-transform: normal !important;">{{substr($lts->isi,0,100)}}...</p>
+                                    <p class="blog-text" style="text-transform: normal !important;">{!!substr($lts->isi,0,100)!!}...</p>
                                 </div>
                             </div>
                         </div>
